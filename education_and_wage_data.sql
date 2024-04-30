@@ -1,1 +1,36 @@
-a
+SELECT
+    year,
+    SUM(less_than_hs) AS less_than_hs_total,
+    SUM(high_school) AS high_school_total,
+    SUM(some_college) AS some_college_total,
+    SUM(bachelors_degree) AS bachelors_degree_total,
+    SUM(advanced_degree) AS advanced_degree_total,
+    SUM(men_less_than_hs) AS men_less_than_hs_total,
+    SUM(men_high_school) AS men_high_school_total,
+    SUM(men_some_college) AS men_some_college_total,
+    SUM(men_bachelors_degree) AS men_bachelors_degree_total,
+    SUM(men_advanced_degree) AS men_advanced_degree_total,
+    SUM(women_less_than_hs) AS women_less_than_hs_total,
+    SUM(women_high_school) AS women_high_school_total,
+    SUM(women_some_college) AS women_some_college_total,
+    SUM(women_bachelors_degree) AS women_bachelors_degree_total,
+    SUM(women_advanced_degree) AS women_advanced_degree_total,
+    SUM(white_less_than_hs) AS white_less_than_hs_total,
+    SUM(white_high_school) AS white_high_school_total,
+    SUM(white_some_college) AS white_some_college_total,
+    SUM(white_bachelors_degree) AS white_bachelors_degree_total,
+    SUM(white_advanced_degree) AS white_advanced_degree_total,
+    SUM(black_less_than_hs) AS black_less_than_hs_total,
+    SUM(black_high_school) AS black_high_school_total,
+    SUM(black_some_college) AS black_some_college_total,
+    SUM(black_bachelors_degree) AS black_bachelors_degree_total,
+    SUM(black_advanced_degree) AS black_advanced_degree_total,
+    SUM(hispanic_less_than_hs) AS hispanic_less_than_hs_total,
+    SUM(hispanic_high_school) AS hispanic_high_school_total,
+    SUM(hispanic_some_college) AS hispanic_some_college_total,
+    SUM(hispanic_bachelors_degree) AS hispanic_bachelors_degree_total,
+    SUM(hispanic_advanced_degree) AS hispanic_advanced_degree_total
+FROM
+    your_table_name
+GROUP BY
+    year;
